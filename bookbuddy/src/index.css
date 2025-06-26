@@ -1,0 +1,36 @@
+:root {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --light-mode-primary: #f5f7fa;
+  --light-mode-secondary: #e8ecef;
+  --light-mode-accent: #2563eb;
+  --light-mode-text: #1f2a44;
+  color: var(--light-mode-text);
+}
+
+body {
+  background-color: var(--light-mode-primary);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  margin-top: 20px;
+  background-color: var(--light-mode-secondary);
+  width: 150px;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+#logo {
+  width: 100px;
+}
