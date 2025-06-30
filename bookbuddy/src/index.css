@@ -10,17 +10,19 @@
 
 body {
   background-color: var(--light-mode-primary);
+  width: 100%;
+  margin: 0;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
+  width: 100%;
 }
 
 .navbar {
-  margin-top: 20px;
   background-color: var(--light-mode-secondary);
-  width: 150px;
+  padding: 20px;
+  width: 200px;
+  height: 550px;
 }
 
 .navbar ul {
@@ -29,8 +31,9 @@ body {
 
 .navbar ul li {
   list-style-type: none;
+  padding-top: 10px;
 }
 
 #logo {
-  width: 100px;
+  width: 200px;
 }

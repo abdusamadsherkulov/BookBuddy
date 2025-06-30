@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import bookBuddyLogo from './assets/BookBuddy.svg';
+import bookWormLogo from './assets/BookWorm_light.svg';
 import './index.css';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
         <div className="navbar">
           <a href="#">
-            <img src={bookBuddyLogo} alt="logo" id="logo" />
+            <img src={bookWormLogo} alt="logo" id="logo" />
           </a>
           <div className="nav-menu">
             <ul>
