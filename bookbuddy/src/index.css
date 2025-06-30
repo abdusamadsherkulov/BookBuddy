@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 :root {
   color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   --light-mode-primary: #f5f7fa;
   --light-mode-secondary: #e8ecef;
   --light-mode-accent: #2563eb;
@@ -14,9 +16,9 @@ body {
   margin: 0;
 }
 
-.container {
+/* .container {
   width: 100%;
-}
+} */
 
 .navbar {
   background-color: var(--light-mode-secondary);
@@ -32,6 +34,16 @@ body {
 .navbar ul li {
   list-style-type: none;
   padding-top: 10px;
+  font-size: 1.2em;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--light-mode-text);
+}
+
+.navbar ul li a:hover {
+  color: #4b5364;
 }
 
 #logo {
