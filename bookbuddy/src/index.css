@@ -20,11 +20,17 @@ body {
   width: 100%;
 } */
 
+#logo {
+  width: 130px;
+  padding: 0px 5px;
+}
+
 .navbar {
   background-color: var(--light-mode-secondary);
   padding: 20px;
-  width: 200px;
-  height: 550px;
+  width: 190px;
+  height: 100vh;
+  position: fixed;
 }
 
 .navbar ul {
@@ -33,19 +39,30 @@ body {
 
 .navbar ul li {
   list-style-type: none;
-  padding-top: 10px;
-  font-size: 1.2em;
+  padding: 10px 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
-.navbar ul li a {
+.navbar ul a {
   text-decoration: none;
   color: var(--light-mode-text);
 }
 
-.navbar ul li a:hover {
-  color: #4b5364;
+.navbar ul li:hover {
+  background-color: #4b536418;
 }
 
-#logo {
-  width: 200px;
+.icon_l {
+  width: 17px;
+}
+
+.icon_m {
+  width: 15px;
+}
+
+.icon_s {
+  width: 14px;
 }
