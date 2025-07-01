@@ -21,48 +21,62 @@ body {
 } */
 
 #logo {
-  width: 130px;
-  padding: 0px 5px;
+  width: 150px;
+  padding: 15px 5px;
 }
 
 .navbar {
   background-color: var(--light-mode-secondary);
   padding: 20px;
-  width: 190px;
+  width: 260px;
   height: 100vh;
   position: fixed;
 }
 
-.navbar ul {
-  padding: 0;
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  height: calc(96vh - 80px);
+  justify-content: space-between;
 }
 
-.navbar ul li {
+.nav-list {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li,
+.nav-more li {
   list-style-type: none;
-  padding: 10px 5px;
-  font-size: 1rem;
+  padding: 13px 5px;
+  font-size: 1.4rem;
   border-radius: 5px;
   display: flex;
-  align-items: center;
 }
 
-.navbar ul a {
+.navbar ul a,
+.nav-more a {
   text-decoration: none;
   color: var(--light-mode-text);
 }
 
-.navbar ul li:hover {
+.navbar ul li:hover,
+.nav-more li:hover {
   background-color: #4b536418;
 }
 
 .icon_l {
-  width: 17px;
+  width: 23px;
 }
 
 .icon_m {
-  width: 15px;
+  width: 21px;
 }
 
 .icon_s {
-  width: 14px;
+  width: 20px;
+}
+
+.nav-more {
+  margin-top: auto;
 }
