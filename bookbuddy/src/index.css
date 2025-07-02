@@ -3,22 +3,17 @@
 :root {
   color: black;
   font-family: 'Pixelify Sans', sans-serif;
-  --light-mode-primary: #f5f7fa;
-  --light-mode-secondary: #e8ecef;
-  --light-mode-accent: #2563eb;
-  --light-mode-text: #1f2a44;
-  color: var(--light-mode-text);
+  --primary-color: #f5f7fa;
+  --secondary-color: #e8ecef;
+  --font-color: #1f2a44;
+  --bg-color: #e6e6e6;
 }
 
 body {
-  background-color: var(--light-mode-primary);
+  background-color: var(--primary-color);
   width: 100%;
   margin: 0;
 }
-
-/* .container {
-  width: 100%;
-} */
 
 #logo {
   width: 150px;
@@ -26,9 +21,9 @@ body {
 }
 
 .navbar {
-  background-color: var(--light-mode-secondary);
+  background-color: var(--secondary-color);
   padding: 20px;
-  width: 260px;
+  width: 20%;
   height: 100vh;
   position: fixed;
 }
@@ -79,4 +74,17 @@ body {
 
 .nav-more {
   margin-top: auto;
+}
+
+.home {
+  color: #1f2a44;
+  margin: 0;
+  width: 80%;
+  float: right;
+}
+
+#home-text {
+  color: black;
+  margin: 0;
+  text-align: center;
 }

@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import UniLinkLogo from '../assets/UniLink_light.svg';
 import HomeIconLight from '../assets/HomeIcon_light.svg';
+import HomeIconDark from '../assets/HomeIcon_dark.svg';
+import HomeIconSelectedLight from '../assets/HomeIconSelected_light.svg';
+import HomeIconSelectedDark from '../assets/HomeIconSelected_dark.svg';
 import SearchIconLight from '../assets/SearchIcon_light.svg';
 import MesssageIconLight from '../assets/MessageIcon_light.svg';
 import NotificationIconLight from '../assets/NotificationIcon_light.svg';
@@ -9,7 +13,7 @@ import CreateIconLight from '../assets/CreateIcon_light.svg';
 import ProfileIconLight from '../assets/ProfileIcon_light.svg';
 import MoreIconLight from '../assets/MoreIcon_light.svg';
 
-export default function Navbar() {
+export default function Navbar({darkMode, setDarkMode}) {
   return (
     <div className="navbar">
       <a href="#">
@@ -17,25 +21,25 @@ export default function Navbar() {
       </a>
       <div className="nav-menu">
         <ul className="nav-list">
-          <a href="#">
+          <Link to="/">
             <li>
               <img className="icon_l" src={HomeIconLight} alt="Home" />
               &nbsp;&nbsp;&nbsp;Home
             </li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/search">
             <li>
               <img className="icon_l" src={SearchIconLight} alt="Search" />
               &nbsp;&nbsp;&nbsp;Search connection
             </li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/messages">
             <li>
               <img className="icon_l" src={MesssageIconLight} alt="Message" />
               &nbsp;&nbsp;&nbsp;Messages
             </li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/notification">
             <li>
               <img
                 className="icon_m"
@@ -44,8 +48,8 @@ export default function Navbar() {
               />
               &nbsp;&nbsp;&nbsp;Notification
             </li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/create">
             <li>
               <img
                 className="icon_m"
@@ -54,8 +58,8 @@ export default function Navbar() {
               />
               &nbsp;&nbsp;&nbsp;Create
             </li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/profile">
             <li>
               <img
                 className="icon_s"
@@ -64,8 +68,9 @@ export default function Navbar() {
               />
               &nbsp;&nbsp;&nbsp;Profile
             </li>
-          </a>
+          </Link>
         </ul>
+
         <div className="nav-more">
           <a href="#">
             <li>
